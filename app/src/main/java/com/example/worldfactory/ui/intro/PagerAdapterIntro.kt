@@ -1,4 +1,4 @@
-package com.example.worldfactory
+package com.example.worldfactory.ui.intro
 
 import android.content.res.Resources
 import androidx.fragment.app.Fragment
@@ -10,9 +10,15 @@ class PagerAdapterIntro(fragmentActivity: FragmentActivity) : FragmentStateAdapt
 
     override fun createFragment(position: Int): Fragment {
         return when(position){
-            0 -> {FirstFragmentIntro()}
-            1 -> {SecondFragmentIntro()}
-            2 -> {ThirdFragmentIntro()}
+            0 -> {
+                FirstFragment()
+            }
+            1 -> {
+                SecondFragment()
+            }
+            2 -> {
+                ThirdFragment()
+            }
             else -> {throw Resources.NotFoundException("Position for intro not found!")}
         }
     }

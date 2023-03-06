@@ -5,7 +5,7 @@
     android:id="@+id/coordinatorLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".IntroActivity">
+    tools:context=".ui.intro.IntroActivity">
 
     <Button
         android:id="@+id/button_skip"
@@ -53,7 +53,7 @@
         app:layout_constraintWidth_max="311dp" />
 
     <androidx.viewpager2.widget.ViewPager2
-        android:id="@+id/viewpagerIntro"
+        android:id="@+id/viewpagerintro"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
