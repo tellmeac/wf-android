@@ -24,6 +24,7 @@ class LoginActivity : AppCompatActivity() {
 
         binding.buttonSignup.setOnClickListener {
             // TODO: Is there any forms that can be used to validate required fields ?
+            // TODO: valid login implementation (study case only!)
             if (binding.textInputLayoutName.editText?.text.toString().isEmpty() ||
                 binding.textInputLayoutEmail.editText?.text.toString().isEmpty() ||
                 binding.textInputLayoutPassword.editText?.text.toString().isEmpty()) {

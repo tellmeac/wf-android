@@ -10,15 +10,9 @@ class PagerAdapterIntro(fragmentActivity: FragmentActivity) : FragmentStateAdapt
 
     override fun createFragment(position: Int): Fragment {
         return when(position){
-            0 -> {
-                FirstFragment()
-            }
-            1 -> {
-                SecondFragment()
-            }
-            2 -> {
-                ThirdFragment()
-            }
+            0 -> FirstFragment()
+            1 -> SecondFragment()
+            2 -> ThirdFragment()
             else -> {throw Resources.NotFoundException("Position for intro not found!")}
         }
     }

@@ -14,7 +14,7 @@
         android:layout_marginStart="172dp"
         android:layout_marginEnd="181dp"
         android:fontFamily="@font/rubik_bold"
-        android:text="Work in progress!"
+        android:text="Under active development!"
         android:textAlignment="center"
         android:textColor="@color/buttonsMain"
         android:textSize="36sp"

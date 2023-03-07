@@ -13,7 +13,7 @@
         android:layout_height="48dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:contentDescription="back"
+        android:contentDescription="@string/back"
         android:gravity="center"
         android:insetTop="0dp"
         android:insetBottom="0dp"
@@ -37,7 +37,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_chainStyle="packed"
-        app:srcCompat="@drawable/signuppic" />
+        app:srcCompat="@drawable/signuppic"
+        android:contentDescription="@string/todo" />
 
     <TextView
         android:id="@+id/textView5"
@@ -91,7 +92,7 @@
             android:layout_height="wrap_content"
             android:backgroundTint="@color/white"
             android:fontFamily="@font/rubik"
-            android:gravity="center_vertical"
+            android:gravity="start"
             android:hint="@string/name"
             android:inputType="textPersonName|text"
             android:paddingTop="16dp"
@@ -122,7 +123,7 @@
             android:layout_height="wrap_content"
             android:backgroundTint="@color/white"
             android:fontFamily="@font/rubik"
-            android:gravity="center_vertical"
+            android:gravity="start"
             android:hint="@string/email"
             android:inputType="textWebEmailAddress|text"
             android:paddingTop="16dp"
@@ -154,7 +155,7 @@
             android:layout_height="wrap_content"
             android:backgroundTint="@color/white"
             android:fontFamily="@font/rubik"
-            android:gravity="center_vertical"
+            android:gravity="start"
             android:hint="@string/password"
             android:inputType="textPassword"
             android:paddingTop="16dp"

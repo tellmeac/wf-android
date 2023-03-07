@@ -8,7 +8,6 @@ import com.example.worldfactory.databinding.ActivityMainBinding
 import com.example.worldfactory.ui.intro.IntroActivity
 
 class MainActivity : AppCompatActivity() {
-
     private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {

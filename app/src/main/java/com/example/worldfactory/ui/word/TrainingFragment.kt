@@ -17,11 +17,9 @@ class TrainingFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-
+    ): View {
         _binding = FragmentTrainingBinding.inflate(inflater, container, false)
         return binding.root
-
     }
 
     override fun onDestroyView() {
