@@ -28,7 +28,7 @@ class WordActivity : AppCompatActivity() {
                 else -> 0
             }
             viewPager.setCurrentItem(pos, true)
-            false
+            true
         }
     }
 }
