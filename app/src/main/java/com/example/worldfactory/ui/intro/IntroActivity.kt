@@ -31,6 +31,7 @@ class IntroActivity : AppCompatActivity() {
                     binding.buttonNext.text = getString(R.string.next)
                 else
                     binding.buttonNext.text = getString(R.string.start)
+                currentPageIndex = position
             }
         })
 
@@ -41,7 +42,9 @@ class IntroActivity : AppCompatActivity() {
                 currentPageIndex++
 
                 viewPager.setCurrentItem(currentPageIndex, true)
-                if(currentPageIndex == 2) binding.buttonNext.text = getString(R.string.start)
+                if(currentPageIndex == 2)
+                    binding.buttonNext.text = getString(R.string.start)
+
                 return@setOnClickListener
             }
 

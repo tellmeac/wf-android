@@ -18,7 +18,8 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_chainStyle="packed" />
+        app:layout_constraintVertical_chainStyle="packed"
+        android:contentDescription="@string/todo" />
 
     <TextView
         android:id="@+id/textView2"
@@ -79,24 +80,27 @@
                 android:id="@+id/imageView4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="12dp"
+                android:layout_marginEnd="12dp"
                 android:layout_weight="1"
-                android:src="@drawable/stepothersvg" />
+                android:src="@drawable/stepothersvg"
+                android:contentDescription="@string/todo" />
 
             <ImageView
                 android:id="@+id/imageView5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="12dp"
+                android:layout_marginEnd="12dp"
                 android:layout_weight="1"
-                android:src="@drawable/stepothersvg" />
+                android:src="@drawable/stepothersvg"
+                android:contentDescription="@string/todo" />
 
             <ImageView
                 android:id="@+id/imageView3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:src="@drawable/stepcurrentsvg" />
+                android:src="@drawable/stepcurrentsvg"
+                android:contentDescription="@string/todo" />
 
         </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

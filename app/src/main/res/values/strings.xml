@@ -29,4 +29,5 @@
     <string name="test_color_text"><font color='#65AAEA'>Example: </font> he developed an interest in cooking.</string>
     <string name="back">back</string>
     <string name="todo">TODO</string>
+    <string name="under_active_development">Under active development!</string>
 </resources>
