@@ -5,11 +5,11 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.worldfactory.databinding.FragmentFirstIntroBinding
+import com.example.worldfactory.databinding.StepAIntroFragmentBinding
 
-class FirstFragment : Fragment() {
+class AStepFragment : Fragment() {
 
-    private var _binding: FragmentFirstIntroBinding? = null
+    private var _binding: StepAIntroFragmentBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -19,7 +19,7 @@ class FirstFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentFirstIntroBinding.inflate(inflater, container, false)
+        _binding = StepAIntroFragmentBinding.inflate(inflater, container, false)
         return binding.root
     }
 

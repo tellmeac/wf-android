@@ -22,7 +22,6 @@ private fun isAllowedURI(uri: String): Boolean {
 class VideoFragment : Fragment() {
 
     private class VideoWebView : WebViewClient() {
-
         override fun shouldOverrideUrlLoading(view: WebView?, request: WebResourceRequest?): Boolean {
             if(isAllowedURI(request?.url.toString())) {
                 return super.shouldOverrideUrlLoading(view, request)
@@ -41,10 +40,8 @@ class VideoFragment : Fragment() {
         super.onCreate(savedInstanceState)
         activity?.onBackPressedDispatcher?.addCallback(this, object : OnBackPressedCallback(true) {
             override fun handleOnBackPressed() {
-                if ((activity as WordActivity).isOnVideo()) {
-                    if (binding.webview.canGoBack() && isAllowedURI(binding.webview.url.toString())) {
-                        binding.webview.goBack()
-                    }
+                if (binding.webview.canGoBack() && isAllowedURI(binding.webview.url.toString())) {
+                    binding.webview.goBack()
                 } else {
                     isEnabled = false
                     activity?.onBackPressed() // TODO: deprecated
@@ -54,12 +51,11 @@ class VideoFragment : Fragment() {
     }
 
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
+        inflater: LayoutInflater,
+        container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-
         _binding = FragmentVideoBinding.inflate(inflater, container, false)
-
         return binding.root
 
     }

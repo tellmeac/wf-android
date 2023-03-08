@@ -5,11 +5,11 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.worldfactory.databinding.FragmentThirdIntroBinding
+import com.example.worldfactory.databinding.StepBIntroFragmentBinding
 
-class ThirdFragment : Fragment() {
+class BStepFragment : Fragment() {
 
-    private var _binding: FragmentThirdIntroBinding? = null
+    private var _binding: StepBIntroFragmentBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -19,7 +19,7 @@ class ThirdFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentThirdIntroBinding.inflate(inflater, container, false)
+        _binding = StepBIntroFragmentBinding.inflate(inflater, container, false)
         return binding.root
     }
 

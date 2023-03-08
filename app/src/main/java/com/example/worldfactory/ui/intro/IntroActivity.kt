@@ -22,7 +22,7 @@ class IntroActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         viewPager = binding.viewpagerintro
-        viewPager.adapter = PagerAdapterIntro(this)
+        viewPager.adapter = StateAdapter(this)
 
         viewPager.registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback() {
             override fun onPageSelected(position: Int) {

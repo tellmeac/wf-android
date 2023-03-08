@@ -5,14 +5,14 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
 import androidx.viewpager2.adapter.FragmentStateAdapter
 
-class PagerAdapterIntro(fragmentActivity: FragmentActivity) : FragmentStateAdapter(fragmentActivity) {
+class StateAdapter(fragmentActivity: FragmentActivity) : FragmentStateAdapter(fragmentActivity) {
     override fun getItemCount() = 3
 
     override fun createFragment(position: Int): Fragment {
         return when(position){
-            0 -> FirstFragment()
-            1 -> SecondFragment()
-            2 -> ThirdFragment()
+            0 -> AStepFragment()
+            1 -> BStepFragment()
+            2 -> CStepFragment()
             else -> {throw Resources.NotFoundException("Position for intro not found!")}
         }
     }
