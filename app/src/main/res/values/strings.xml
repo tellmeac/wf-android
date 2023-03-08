@@ -30,4 +30,6 @@
     <string name="back">back</string>
     <string name="todo">TODO</string>
     <string name="under_active_development">Under active development!</string>
+    <string name="search_course">Search Course</string>
+    <string name="lets_learn">Let\'s learn!</string>
 </resources>

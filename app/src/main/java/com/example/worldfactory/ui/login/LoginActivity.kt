@@ -8,8 +8,14 @@ import com.example.worldfactory.R
 import com.example.worldfactory.ui.word.WordActivity
 import com.example.worldfactory.databinding.ActivityLoginBinding
 
-class LoginActivity : AppCompatActivity() {
+// TODO: study case only
+fun isValidLoginInput(binding: ActivityLoginBinding): Boolean {
+    return binding.textInputLayoutName.editText?.text.toString().isEmpty() ||
+            binding.textInputLayoutEmail.editText?.text.toString().isEmpty() ||
+            binding.textInputLayoutPassword.editText?.text.toString().isEmpty()
+}
 
+class LoginActivity : AppCompatActivity() {
     private lateinit var binding: ActivityLoginBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -23,21 +29,21 @@ class LoginActivity : AppCompatActivity() {
         }
 
         binding.buttonSignup.setOnClickListener {
-            // TODO: Is there any forms that can be used to validate required fields ?
-            // TODO: valid login implementation (study case only!)
-            if (binding.textInputLayoutName.editText?.text.toString().isEmpty() ||
-                binding.textInputLayoutEmail.editText?.text.toString().isEmpty() ||
-                binding.textInputLayoutPassword.editText?.text.toString().isEmpty()) {
-                AlertDialog.Builder(this)
-                    .setTitle(getString(R.string.login_failure))
-                    .setMessage(R.string.login_fail_empty_fields)
-                    .show()
-                return@setOnClickListener
-            }
-
-            // Move next
-            val intent = Intent(this@LoginActivity, WordActivity::class.java)
-            startActivity(intent)
+            signupHandler()
         }
+    }
+
+    private fun signupHandler() {
+        if (isValidLoginInput(binding)) {
+            AlertDialog.Builder(this)
+                .setTitle(getString(R.string.login_failure))
+                .setMessage(R.string.login_fail_empty_fields)
+                .show()
+            return
+        }
+
+        // Move next
+        val intent = Intent(this@LoginActivity, WordActivity::class.java)
+        startActivity(intent)
     }
 }
